@@ -11,7 +11,7 @@ module.exports = function(server) {
   const itemService = require('../api/itens/itemService');
   itemService.register(router, '/item');
 
-  //Search's routes
+  //Searchs routes
   router.get('/search-name/:name', itemQuerys.searchByName);
 
   const bagService = require('../api/bag/bagService');
